@@ -1,9 +1,11 @@
 import adafruit_dht as DHT
+import board
 
-from board import D26
 from time import sleep
 
-sensor = DHT.DHT22(D26, use_pulseio=False)
+print(dir(board))
+pin = board.D26
+sensor = DHT.DHT22(pin, use_pulseio=False)
 while True:
     try:
         temp = sensor.temperature
