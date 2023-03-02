@@ -3,7 +3,7 @@ import adafruit_dht as DHT
 from board import D26
 from time import sleep
 
-sensor = DHT.DHT22(D26)
+sensor = DHT.DHT22(D26, use_pulseio=False)
 while True:
     try:
         temp = sensor.temperature
