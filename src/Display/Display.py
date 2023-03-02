@@ -5,7 +5,7 @@ from PIL import ImageFont
 import ST7735
 import time
 
-disp = ST7735.ST7735(port=0, cs=0, dc=24, rst=22, width=128, height=160, rotation=0, invert=False)
+disp = ST7735.ST7735(port=0, cs=0, dc=24, backlight=None, rst=25, width=128, height=160, rotation=0, invert=False)
 
 WIDTH = disp.width
 HEIGHT = disp.height
