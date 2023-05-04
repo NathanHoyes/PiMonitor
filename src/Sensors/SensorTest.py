@@ -4,7 +4,7 @@ import board
 from time import sleep
 
 print(dir(board))
-pin = board.D26
+pin = board.D11
 sensor = DHT.DHT22(pin, use_pulseio=False)
 while True:
     try:
